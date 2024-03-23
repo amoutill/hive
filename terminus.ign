@@ -1,0 +1,43 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "amoutill",
+        "sshAuthorizedKeys": [
+          "ssh-rsa ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHdjxQ8D2dZbtsGPtf7WSFzM2cWy6txPFhu2CmT8nGz2 amoutill@student.42lehavre.fr"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/systemd/zram-generator.conf",
+        "contents": {
+          "compression": "",
+          "source": "data:;base64,IyBUaGlzIGNvbmZpZyBmaWxlIGVuYWJsZXMgYSAvZGV2L3pyYW0wIGRldmljZSB3aXRoIHRoZSBkZWZhdWx0IHNldHRpbmdzClt6cmFtMF0K"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,terminus"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/NetworkManager/system-connections/enp6s18.nmconnection",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/zzLUYrEIBAE0P8+y5pdl2UJDJ4k5KPRCgqxFbszkNsPCcPwfqqgaolNBNFKk5VKCpD+r34mOzsCLGMIjIoYxsYRTrjiM1pKf/6txCkNqPrgf6bL7/f89Y6eUo7d5aZ2Pw2jFjmUkmjw0+1xFafgEXOgyqfbuOxh411BFZZbCpXl4J1eAQAA//952idZrgAAAA=="
+        },
+        "mode": 384
+      }
+    ]
+  }
+}

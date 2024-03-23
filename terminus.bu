@@ -1,0 +1,34 @@
+variant: fcos
+version: 1.5.0
+passwd:
+  users:
+    - name: amoutill
+      ssh_authorized_keys:
+        - ssh-rsa ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHdjxQ8D2dZbtsGPtf7WSFzM2cWy6txPFhu2CmT8nGz2 amoutill@student.42lehavre.fr
+storage:
+  files:
+    - path: /etc/systemd/zram-generator.conf
+      mode: 0644
+      contents:
+        inline: |
+          # This config file enables a /dev/zram0 device with the default settings
+          [zram0]
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: terminus
+    - path: /etc/NetworkManager/system-connections/enp6s18.nmconnection
+      mode: 0600
+      contents:
+        inline: |
+          [connection]
+          id=enp6s18
+          type=ethernet
+          interface-name=enp6s18
+          [ipv4]
+          address1=10.0.0.2/8,10.0.0.1
+          dhcp-hostname=terminus
+          dns=1.1.1.1;
+          dns-search=
+          may-fail=false
+          method=manual
