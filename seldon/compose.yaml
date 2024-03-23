@@ -12,3 +12,6 @@ services:
     tmpfs:
       - /var/run
     command: headscale serve
+
+volumes:
+  headscale_data:
