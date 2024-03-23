@@ -16,7 +16,7 @@ storage:
     - path: /etc/hostname
       mode: 0644
       contents:
-        inline: terminus
+        inline: hive
     - path: /etc/NetworkManager/system-connections/enp6s18.nmconnection
       mode: 0600
       contents:
@@ -27,7 +27,7 @@ storage:
           interface-name=enp6s18
           [ipv4]
           address1=10.0.0.2/8,10.0.0.1
-          dhcp-hostname=terminus
+          dhcp-hostname=hive
           dns=1.1.1.1;
           dns-search=
           may-fail=false

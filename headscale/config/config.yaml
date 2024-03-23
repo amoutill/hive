@@ -10,13 +10,13 @@
 #
 # https://myheadscale.example.com:443
 #
-server_url: https://terminus.amoutillon.com
+server_url: http://127.0.0.1:8080
 
 # Address to listen to / bind to on the server
 #
 # For production:
 # listen_addr: 0.0.0.0:8080
-listen_addr: 0.0.0.0:443
+listen_addr: 127.0.0.1:8080
 
 # Address to listen to /metrics, you may want
 # to keep this endpoint private to your internal
@@ -32,7 +32,7 @@ metrics_listen_addr: 127.0.0.1:9090
 #
 # For production:
 # grpc_listen_addr: 0.0.0.0:50443
-grpc_listen_addr: 0.0.0.0:50443
+grpc_listen_addr: 127.0.0.1:50443
 
 # Allow the gRPC admin interface to run in INSECURE
 # mode. This is not recommended as the traffic will
@@ -172,10 +172,10 @@ database:
 acme_url: https://acme-v02.api.letsencrypt.org/directory
 
 # Email to register with ACME provider
-acme_email: "contact@amoutillon.com"
+acme_email: ""
 
 # Domain name to request a TLS certificate for:
-tls_letsencrypt_hostname: "terminus.amoutillon.com"
+tls_letsencrypt_hostname: ""
 
 # Path to store certificates and metadata needed by
 # letsencrypt
@@ -266,7 +266,7 @@ dns_config:
   # `base_domain` must be a FQDNs, without the trailing dot.
   # The FQDN of the hosts will be
   # `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_).
-  base_domain: amoutillon.com
+  base_domain: example.com
 
 # Unix socket used for the CLI to connect without authentication
 # Note: for production you will want to set this to something like:

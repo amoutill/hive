@@ -26,7 +26,7 @@
         "path": "/etc/hostname",
         "contents": {
           "compression": "",
-          "source": "data:,terminus"
+          "source": "data:,hive"
         },
         "mode": 420
       },
@@ -34,7 +34,7 @@
         "path": "/etc/NetworkManager/system-connections/enp6s18.nmconnection",
         "contents": {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/zzLUYrEIBAE0P8+y5pdl2UJDJ4k5KPRCgqxFbszkNsPCcPwfqqgaolNBNFKk5VKCpD+r34mOzsCLGMIjIoYxsYRTrjiM1pKf/6txCkNqPrgf6bL7/f89Y6eUo7d5aZ2Pw2jFjmUkmjw0+1xFafgEXOgyqfbuOxh411BFZZbCpXl4J1eAQAA//952idZrgAAAA=="
+          "source": "data:;base64,H4sIAAAAAAAC/zzLUYrEIBAE0P8+y5pdl2UJDJ4k5KPRCgqxFbsnkNsPCcPwfqqgaolNBNFKk5VKCpD+r34mOzsCLGMIjIoYxsYRTrjiM1pKP/5W4pQGVH3wP9Pl93v+ekdPKcfuclO7n7kcoCQa/HR7XMUpeMQcqPLpNi572HhXUIXllkJlefJOrwAAAP//mlUSRqoAAAA="
         },
         "mode": 384
       }
